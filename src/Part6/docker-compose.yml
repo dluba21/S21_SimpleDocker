@@ -1,0 +1,9 @@
+services:
+    server:
+        build: ../Task5
+        tty: true
+    proxy:
+        build: ./
+        tty: true
+        ports:
+            - 80:8080
